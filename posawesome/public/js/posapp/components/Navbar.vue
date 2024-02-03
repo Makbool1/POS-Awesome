@@ -17,13 +17,13 @@
         style="cursor: pointer"
         class="text-uppercase primary--text"
       >
-        <span class="font-weight-light">pos</span>
-        <span>awesome</span>
+        <span class="font-weight-light">Possy</span>
+        <span>ERP</span>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
       <v-btn style="cursor: unset" text color="primary">
-        <span right>{{ pos_profile.name }}</span>
+        <span right>Location: {{ pos_profile.name }}</span>
       </v-btn>
       <div class="text-center">
         <v-menu offset-y>
@@ -157,7 +157,7 @@ export default {
       snack: false,
       snackColor: '',
       snackText: '',
-      company: 'POS Awesome',
+      company: 'Possy ERP',
       company_img: '/assets/erpnext/images/erpnext-logo.svg',
       pos_profile: '',
       freeze: false,
@@ -176,7 +176,7 @@ export default {
     },
     go_about() {
       const win = window.open(
-        'https://github.com/yrestom/POS-Awesome',
+        'https://possy.online',
         '_blank'
       );
       win.focus();
